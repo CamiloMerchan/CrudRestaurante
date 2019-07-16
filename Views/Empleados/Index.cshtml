@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CrudRestaurante.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+       <a asp-action="Create"><button class="btn btn-primary btn-success">Nuevo</button></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Documento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Documento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo.Nombre)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmpleadoID"><i class="fas fa-edit"></i></a>
+                <a asp-action="Details" asp-route-id="@item.EmpleadoID"><i class="fas fa-book-reader"></i></a>
+                <a asp-action="Delete" asp-route-id="@item.EmpleadoID"><i class="fas fa-trash-alt"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+﻿@model CrudRestaurante.Models.Mesa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mesa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroPersonas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumeroPersonas)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MesaID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

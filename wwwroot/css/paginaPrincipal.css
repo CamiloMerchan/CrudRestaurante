@@ -1,0 +1,142 @@
+  body {
+    overflow-x: hidden;
+   
+  }
+  
+  p {
+    line-height: 1.75;
+  }
+  
+  a {
+    color: rgb(255, 52, 52);
+  }
+  a >i{
+    color:#38EBC1;
+  }
+  .fa-facebook-f{
+    color: blue;
+  }
+  p>.text-muted{
+    color:rgb(36, 147, 211); 
+  }
+  
+  a:hover {
+    color:#38EBC1;
+  }
+  
+  .text-primary {
+    color:#A68EBF !important;
+  }
+  
+  
+  section {
+    padding: 100px 0;
+  }
+  header.restaurante {
+    text-align: center;
+    color: white;
+    background-image: url("../img/450_1000.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  header.restaurante .Bienvenidos {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  
+  header.restaurante .Bienvenidos .bienvenidos {
+    font-size: 62px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+    
+  }
+  
+  header.restaurante .Bienvenidos .descripcion {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+   
+  }
+  #Nav {
+    background-color: #212529;
+  }
+  
+    #Nav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important;
+    }
+    #Nav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #212529;
+    }
+    #Nav.navbar-shrink .navbar-brand {
+      font-size: 1.25em;
+      padding: 12px 0;
+    }
+  
+  
+  
+  .servicios-heading {
+    margin: 15px 0;
+    text-transform: none;
+  }
+  
+  #menu .menu-item {
+    right: 0;
+    margin: 0 0 15px;
+  }
+  
+  #menu .menu-item .menu-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  .persona {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .persona img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid #fff;
+  }
+  
+  .persona h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+  
+  .persona p {
+    margin-top: 0;
+  }
+  
+  
+  footer {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #212529;
+  }
+  
+  footer span.copyright {
+    font-size: 90%;
+    line-height: 40px;
+    text-transform: none;
+   
+  }
+  
+  footer ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
